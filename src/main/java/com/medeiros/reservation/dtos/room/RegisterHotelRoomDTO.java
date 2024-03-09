@@ -1,4 +1,4 @@
-package com.medeiros.reservation.dtos;
+package com.medeiros.reservation.dtos.room;
 
 import com.medeiros.reservation.entities.room.RoomType;
 

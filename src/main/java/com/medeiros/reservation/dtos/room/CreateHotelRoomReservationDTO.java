@@ -1,4 +1,4 @@
-package com.medeiros.reservation.dtos;
+package com.medeiros.reservation.dtos.room;
 
 public class CreateHotelRoomReservationDTO {
   private String customerEmail;
