@@ -1,7 +1,7 @@
-package br.com.medeiros.hotelreservation.controllers.reservation;
+package com.medeiros.reservation.controllers.reservation;
 
-import br.com.medeiros.hotelreservation.entities.reservation.Reservation;
-import br.com.medeiros.hotelreservation.usecases.reservation.FinalizeReservationAndMarkAsCompleted;
+import com.medeiros.reservation.entities.reservation.Reservation;
+import com.medeiros.reservation.services.reservation.FinalizeReservationAndMarkAsCompleted;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;

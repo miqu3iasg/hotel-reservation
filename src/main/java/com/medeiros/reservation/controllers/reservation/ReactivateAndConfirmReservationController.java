@@ -1,7 +1,6 @@
-package br.com.medeiros.hotelreservation.controllers.reservation;
+package com.medeiros.reservation.controllers.reservation;
 
-import br.com.medeiros.hotelreservation.usecases.reservation.MarkReservationAsCanceled;
-import br.com.medeiros.hotelreservation.usecases.reservation.ReactivateAndConfirmReservation;
+import com.medeiros.reservation.services.reservation.ReactivateAndConfirmReservation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;

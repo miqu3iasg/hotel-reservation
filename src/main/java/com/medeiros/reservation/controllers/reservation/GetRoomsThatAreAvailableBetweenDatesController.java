@@ -1,13 +1,12 @@
-package br.com.medeiros.hotelreservation.controllers.reservation;
+package com.medeiros.reservation.controllers.reservation;
 
-import br.com.medeiros.hotelreservation.dtos.GetRoomsThatAreAvailableBetweenDatesDTO;
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.usecases.reservation.GetRoomsThatAreAvailableBetweenDates;
+import com.medeiros.reservation.dtos.room.GetRoomsThatAreAvailableBetweenDatesDTO;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.services.reservation.GetRoomsThatAreAvailableBetweenDates;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -21,7 +20,10 @@ public class GetRoomsThatAreAvailableBetweenDatesController {
   }
 
   @GetMapping
-  ResponseEntity<List<Room>> findAvailableRooms(@PathVariable int roomNumber, @RequestBody GetRoomsThatAreAvailableBetweenDatesDTO checkInAndCheckOutTimeData) {
+  ResponseEntity<List<Room>> findAvailableRooms (
+          @PathVariable int roomNumber,
+          @RequestBody GetRoomsThatAreAvailableBetweenDatesDTO checkInAndCheckOutTimeData
+  ) {
     return new ResponseEntity<>(getRoomsThatAreAvailableBetweenDatesService.findAvaibleRooms(roomNumber, checkInAndCheckOutTimeData.getCheckIn(), checkInAndCheckOutTimeData.getCheckOut()), HttpStatus.OK);
   }
 }
