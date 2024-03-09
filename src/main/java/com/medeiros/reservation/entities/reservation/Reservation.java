@@ -1,6 +1,7 @@
 package com.medeiros.reservation.entities.reservation;
 
 import com.medeiros.reservation.entities.customer.Customer;
+import com.medeiros.reservation.entities.room.Room;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -19,7 +20,7 @@ public class Reservation {
 
   @ManyToOne
   @JoinColumn(name = "room_id")
-  private String room;
+  private Room room;
 
   private LocalDateTime checkIn;
   private LocalDateTime checkOut;
@@ -43,11 +44,11 @@ public class Reservation {
     this.customer = customer;
   }
 
-  public String getRoom() {
+  public Room getRoom() {
     return room;
   }
 
-  public void setRoom(String room) {
+  public void setRoom(Room room) {
     this.room = room;
   }
 
