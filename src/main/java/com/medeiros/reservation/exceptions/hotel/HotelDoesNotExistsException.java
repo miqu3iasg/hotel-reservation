@@ -1,4 +1,4 @@
-package com.medeiros.reservation.exceptions;
+package com.medeiros.reservation.exceptions.hotel;
 
 public class HotelDoesNotExistsException extends RuntimeException {
   private static final String DEFAULT_MESSAGE = "Hotel does not exists.";

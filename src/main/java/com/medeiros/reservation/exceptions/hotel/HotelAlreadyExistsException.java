@@ -1,4 +1,4 @@
-package com.medeiros.reservation.exceptions;
+package com.medeiros.reservation.exceptions.hotel;
 
 public class HotelAlreadyExistsException extends RuntimeException {
   private static final String DEFAULT_MESSAGE = "Hotel already exists.";
