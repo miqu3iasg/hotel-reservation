@@ -1,5 +1,6 @@
 package com.medeiros.reservation.entities.room;
 
+import com.medeiros.reservation.entities.hotel.Hotel;
 import com.medeiros.reservation.entities.reservation.Reservation;
 import jakarta.persistence.*;
 
@@ -22,7 +23,7 @@ public class Room {
 
   @ManyToOne
   @JoinColumn(name = "hotel_id")
-  private String hotel;
+  private Hotel hotel;
 
   @OneToMany(mappedBy = "room")
   private List<Reservation> reservations;
@@ -78,11 +79,11 @@ public class Room {
     this.description = description;
   }
 
-  public String getHotel() {
+  public Hotel getHotel() {
     return hotel;
   }
 
-  public void setHotel(String hotel) {
+  public void setHotel(Hotel hotel) {
     this.hotel = hotel;
   }
 
