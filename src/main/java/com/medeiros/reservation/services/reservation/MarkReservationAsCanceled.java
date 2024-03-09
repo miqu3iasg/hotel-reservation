@@ -1,10 +1,10 @@
-package br.com.medeiros.hotelreservation.usecases.reservation;
+package com.medeiros.reservation.services.reservation;
 
-import br.com.medeiros.hotelreservation.entities.reservation.Reservation;
-import br.com.medeiros.hotelreservation.entities.reservation.ReservationStatus;
-import br.com.medeiros.hotelreservation.exceptions.ReservationNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.ReservationRepository;
-import br.com.medeiros.hotelreservation.utils.TimeProvider;
+import com.medeiros.reservation.entities.reservation.Reservation;
+import com.medeiros.reservation.entities.reservation.ReservationStatus;
+import com.medeiros.reservation.exceptions.reservation.ReservationNotFoundException;
+import com.medeiros.reservation.repositories.ReservationRepository;
+import com.medeiros.reservation.utils.TimeProvider;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
