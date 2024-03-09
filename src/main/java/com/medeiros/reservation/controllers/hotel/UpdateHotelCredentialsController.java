@@ -1,8 +1,8 @@
-package br.com.medeiros.hotelreservation.controllers.hotel;
+package com.medeiros.reservation.controllers.hotel;
 
-import br.com.medeiros.hotelreservation.dtos.UpdateHotelDTO;
-import br.com.medeiros.hotelreservation.entities.hotel.Hotel;
-import br.com.medeiros.hotelreservation.usecases.hotel.UpdateHotelCredentials;
+import com.medeiros.reservation.dtos.hotel.UpdateHotelDTO;
+import com.medeiros.reservation.entities.hotel.Hotel;
+import com.medeiros.reservation.services.hotel.UpdateHotelCredentials;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
