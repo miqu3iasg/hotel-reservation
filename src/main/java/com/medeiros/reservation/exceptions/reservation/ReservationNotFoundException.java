@@ -1,4 +1,4 @@
-package com.medeiros.reservation.exceptions;
+package com.medeiros.reservation.exceptions.reservation;
 
 public class ReservationNotFoundException extends RuntimeException {
   private static final String DEFAULT_MESSAGE = "Reservation not found in database.";
