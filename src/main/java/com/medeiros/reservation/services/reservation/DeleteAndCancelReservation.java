@@ -1,8 +1,8 @@
-package br.com.medeiros.hotelreservation.usecases.reservation;
+package com.medeiros.reservation.services.reservation;
 
-import br.com.medeiros.hotelreservation.entities.reservation.Reservation;
-import br.com.medeiros.hotelreservation.exceptions.ReservationNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.ReservationRepository;
+import com.medeiros.reservation.entities.reservation.Reservation;
+import com.medeiros.reservation.exceptions.reservation.ReservationNotFoundException;
+import com.medeiros.reservation.repositories.ReservationRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
