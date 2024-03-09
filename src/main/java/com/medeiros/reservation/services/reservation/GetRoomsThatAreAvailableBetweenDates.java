@@ -1,10 +1,10 @@
-package br.com.medeiros.hotelreservation.usecases.reservation;
+package com.medeiros.reservation.services.reservation;
 
-import br.com.medeiros.hotelreservation.entities.reservation.Reservation;
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.exceptions.RoomNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.ReservationRepository;
-import br.com.medeiros.hotelreservation.repositories.RoomRepository;
+import com.medeiros.reservation.entities.reservation.Reservation;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.exceptions.room.RoomNotFoundException;
+import com.medeiros.reservation.repositories.ReservationRepository;
+import com.medeiros.reservation.repositories.RoomRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -25,7 +25,7 @@ public class GetRoomsThatAreAvailableBetweenDates {
   }
 
   public List<Room> findAvaibleRooms(int roomNumber, LocalDateTime checkIn, LocalDateTime checkOut) {
-    var roomFound = validateIfRoomExistsByRoomNumber(roomNumber);
+    Room roomFound = validateIfRoomExistsByRoomNumber(roomNumber);
 
     List<Reservation> overlappingReservations = getOverlappingReservations(roomFound, checkIn, checkOut);
 
