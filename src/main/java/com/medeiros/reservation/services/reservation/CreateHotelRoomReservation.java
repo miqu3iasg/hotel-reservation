@@ -1,16 +1,17 @@
-package br.com.medeiros.hotelreservation.usecases.reservation;
+package com.medeiros.reservation.services.reservation;
 
-import br.com.medeiros.hotelreservation.dtos.CreateHotelRoomReservationDTO;
-import br.com.medeiros.hotelreservation.entities.customer.Customer;
-import br.com.medeiros.hotelreservation.entities.reservation.Reservation;
-import br.com.medeiros.hotelreservation.entities.reservation.ReservationStatus;
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.exceptions.CustomerNotFoundException;
-import br.com.medeiros.hotelreservation.exceptions.RoomNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.CustomerRepository;
-import br.com.medeiros.hotelreservation.repositories.ReservationRepository;
-import br.com.medeiros.hotelreservation.repositories.RoomRepository;
-import br.com.medeiros.hotelreservation.utils.TimeProvider;
+import com.medeiros.reservation.dtos.room.CreateHotelRoomReservationDTO;
+
+import com.medeiros.reservation.entities.customer.Customer;
+import com.medeiros.reservation.entities.reservation.Reservation;
+import com.medeiros.reservation.entities.reservation.ReservationStatus;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.exceptions.customer.CustomerNotFoundException;
+import com.medeiros.reservation.exceptions.room.RoomNotFoundException;
+import com.medeiros.reservation.repositories.CustomerRepository;
+import com.medeiros.reservation.repositories.ReservationRepository;
+import com.medeiros.reservation.repositories.RoomRepository;
+import com.medeiros.reservation.utils.TimeProvider;
 import org.springframework.stereotype.Service;
 
 @Service
