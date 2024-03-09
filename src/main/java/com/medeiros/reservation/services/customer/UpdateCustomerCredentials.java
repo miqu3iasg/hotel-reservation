@@ -1,4 +1,4 @@
-package br.com.medeiros.hotelreservation.usecases.customer;
+package com.medeiros.reservation.services.customer;
 
 import br.com.medeiros.hotelreservation.dtos.UpdateCustomerDTO;
 import br.com.medeiros.hotelreservation.entities.customer.Customer;
