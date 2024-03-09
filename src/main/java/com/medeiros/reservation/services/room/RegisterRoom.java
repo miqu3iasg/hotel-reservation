@@ -1,13 +1,13 @@
-package br.com.medeiros.hotelreservation.usecases.room;
+package com.medeiros.reservation.services.room;
 
-import br.com.medeiros.hotelreservation.dtos.RegisterHotelRoomDTO;
-import br.com.medeiros.hotelreservation.entities.hotel.Hotel;
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.exceptions.HotelDoesNotExistsException;
-import br.com.medeiros.hotelreservation.exceptions.RoomAlreadyExistsExeption;
-import br.com.medeiros.hotelreservation.repositories.HotelRepository;
-import br.com.medeiros.hotelreservation.repositories.RoomRepository;
-import br.com.medeiros.hotelreservation.utils.TimeProvider;
+import com.medeiros.reservation.dtos.room.RegisterHotelRoomDTO;
+import com.medeiros.reservation.entities.hotel.Hotel;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.exceptions.hotel.HotelDoesNotExistsException;
+import com.medeiros.reservation.exceptions.room.RoomAlreadyExistsExeption;
+import com.medeiros.reservation.repositories.HotelRepository;
+import com.medeiros.reservation.repositories.RoomRepository;
+import com.medeiros.reservation.utils.TimeProvider;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -24,7 +24,7 @@ public class RegisterRoom {
   }
 
   public Room register(RegisterHotelRoomDTO roomDataRequest) {
-    var hotelFound = checkHotelExistsByName(roomDataRequest.getHotelName());
+    Hotel hotelFound = checkHotelExistsByName(roomDataRequest.getHotelName());
 
     checkRoomExistsByNumber(roomDataRequest.getNumber());
 
