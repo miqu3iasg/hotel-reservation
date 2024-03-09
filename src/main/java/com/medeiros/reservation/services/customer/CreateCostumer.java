@@ -1,13 +1,11 @@
-package br.com.medeiros.hotelreservation.usecases.customer;
+package com.medeiros.reservation.services.customer;
 
-import br.com.medeiros.hotelreservation.dtos.CreateCustomerDTO;
-import br.com.medeiros.hotelreservation.entities.customer.Customer;
-import br.com.medeiros.hotelreservation.exceptions.CustomerAlreadyExistsException;
-import br.com.medeiros.hotelreservation.repositories.CustomerRepository;
-import br.com.medeiros.hotelreservation.utils.TimeProvider;
+import com.medeiros.reservation.dtos.customer.CreateCustomerDTO;
+import com.medeiros.reservation.entities.customer.Customer;
+import com.medeiros.reservation.exceptions.customer.CustomerAlreadyExistsException;
+import com.medeiros.reservation.repositories.CustomerRepository;
+import com.medeiros.reservation.utils.TimeProvider;
 import org.springframework.stereotype.Service;
-
-import java.util.regex.Pattern;
 
 @Service
 public class CreateCostumer {
