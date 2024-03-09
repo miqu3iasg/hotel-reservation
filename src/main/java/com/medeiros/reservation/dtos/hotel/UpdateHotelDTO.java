@@ -1,4 +1,4 @@
-package com.medeiros.reservation.dtos;
+package com.medeiros.reservation.dtos.hotel;
 
 import com.medeiros.reservation.entities.address.Address;
 
