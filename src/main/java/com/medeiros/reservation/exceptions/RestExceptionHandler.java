@@ -1,5 +1,12 @@
-package br.com.medeiros.hotelreservation.exceptions;
+package com.medeiros.reservation.exceptions;
 
+import com.medeiros.reservation.exceptions.customer.CustomerAlreadyExistsException;
+import com.medeiros.reservation.exceptions.customer.CustomerNotFoundException;
+import com.medeiros.reservation.exceptions.hotel.HotelAlreadyExistsException;
+import com.medeiros.reservation.exceptions.hotel.HotelDoesNotExistsException;
+import com.medeiros.reservation.exceptions.reservation.ReservationNotFoundException;
+import com.medeiros.reservation.exceptions.room.RoomAlreadyExistsExeption;
+import com.medeiros.reservation.exceptions.room.RoomNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
