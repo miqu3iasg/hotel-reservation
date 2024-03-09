@@ -1,8 +1,8 @@
-package com.medeiros.reservation.controllers.reservation;
+package com.medeiros.reservation.controllers.room;
 
 import com.medeiros.reservation.dtos.room.GetRoomsThatAreAvailableBetweenDatesDTO;
 import com.medeiros.reservation.entities.room.Room;
-import com.medeiros.reservation.services.reservation.GetRoomsThatAreAvailableBetweenDates;
+import com.medeiros.reservation.services.room.GetRoomsThatAreAvailableBetweenDates;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/reservation/get-rooms-available-between-dates/{roomNumber}")
+@RequestMapping("api/v1/room/get-rooms-available-between-dates/{roomNumber}")
 public class GetRoomsThatAreAvailableBetweenDatesController {
 
   private final GetRoomsThatAreAvailableBetweenDates getRoomsThatAreAvailableBetweenDatesService;

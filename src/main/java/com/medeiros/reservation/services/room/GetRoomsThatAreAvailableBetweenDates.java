@@ -1,4 +1,4 @@
-package com.medeiros.reservation.services.reservation;
+package com.medeiros.reservation.services.room;
 
 import com.medeiros.reservation.entities.reservation.Reservation;
 import com.medeiros.reservation.entities.room.Room;
