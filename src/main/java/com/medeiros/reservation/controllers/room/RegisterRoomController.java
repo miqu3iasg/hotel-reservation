@@ -1,8 +1,8 @@
-package br.com.medeiros.hotelreservation.controllers.room;
+package com.medeiros.reservation.controllers.room;
 
-import br.com.medeiros.hotelreservation.dtos.RegisterHotelRoomDTO;
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.usecases.room.RegisterRoom;
+import com.medeiros.reservation.dtos.room.RegisterHotelRoomDTO;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.services.room.RegisterRoom;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
