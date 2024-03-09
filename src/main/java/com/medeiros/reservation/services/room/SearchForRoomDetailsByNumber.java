@@ -1,8 +1,8 @@
-package br.com.medeiros.hotelreservation.usecases.room;
+package com.medeiros.reservation.services.room;
 
-import br.com.medeiros.hotelreservation.entities.room.Room;
-import br.com.medeiros.hotelreservation.exceptions.RoomNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.RoomRepository;
+import com.medeiros.reservation.entities.room.Room;
+import com.medeiros.reservation.exceptions.room.RoomNotFoundException;
+import com.medeiros.reservation.repositories.RoomRepository;
 import org.springframework.stereotype.Service;
 
 @Service
