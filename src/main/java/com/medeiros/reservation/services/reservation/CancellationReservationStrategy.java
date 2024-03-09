@@ -1,4 +1,4 @@
-package br.com.medeiros.hotelreservation.usecases.reservation;
+package com.medeiros.reservation.services.reservation;
 
 import java.util.UUID;
 
