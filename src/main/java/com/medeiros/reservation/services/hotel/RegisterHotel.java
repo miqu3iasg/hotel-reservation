@@ -1,10 +1,10 @@
 package com.medeiros.reservation.services.hotel;
 
-import br.com.medeiros.hotelreservation.dtos.RegisterHotelDTO;
-import br.com.medeiros.hotelreservation.entities.hotel.Hotel;
-import br.com.medeiros.hotelreservation.exceptions.HotelAlreadyExistsException;
-import br.com.medeiros.hotelreservation.repositories.HotelRepository;
-import br.com.medeiros.hotelreservation.utils.TimeProvider;
+import com.medeiros.reservation.dtos.hotel.RegisterHotelDTO;
+import com.medeiros.reservation.entities.hotel.Hotel;
+import com.medeiros.reservation.exceptions.hotel.HotelAlreadyExistsException;
+import com.medeiros.reservation.repositories.HotelRepository;
+import com.medeiros.reservation.utils.TimeProvider;
 import org.springframework.stereotype.Service;
 
 @Service

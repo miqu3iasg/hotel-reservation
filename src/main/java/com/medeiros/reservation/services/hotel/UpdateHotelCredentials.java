@@ -1,9 +1,9 @@
 package com.medeiros.reservation.services.hotel;
 
-import br.com.medeiros.hotelreservation.dtos.UpdateHotelDTO;
-import br.com.medeiros.hotelreservation.entities.hotel.Hotel;
-import br.com.medeiros.hotelreservation.exceptions.HotelDoesNotExistsException;
-import br.com.medeiros.hotelreservation.repositories.HotelRepository;
+import com.medeiros.reservation.dtos.hotel.UpdateHotelDTO;
+import com.medeiros.reservation.entities.hotel.Hotel;
+import com.medeiros.reservation.exceptions.hotel.HotelDoesNotExistsException;
+import com.medeiros.reservation.repositories.HotelRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
