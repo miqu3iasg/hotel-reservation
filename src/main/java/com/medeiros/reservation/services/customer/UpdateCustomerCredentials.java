@@ -1,9 +1,9 @@
 package com.medeiros.reservation.services.customer;
 
-import br.com.medeiros.hotelreservation.dtos.UpdateCustomerDTO;
-import br.com.medeiros.hotelreservation.entities.customer.Customer;
-import br.com.medeiros.hotelreservation.exceptions.CustomerNotFoundException;
-import br.com.medeiros.hotelreservation.repositories.CustomerRepository;
+import com.medeiros.reservation.dtos.customer.UpdateCustomerDTO;
+import com.medeiros.reservation.entities.customer.Customer;
+import com.medeiros.reservation.exceptions.customer.CustomerNotFoundException;
+import com.medeiros.reservation.repositories.CustomerRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
