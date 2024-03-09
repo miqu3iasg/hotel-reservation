@@ -1,4 +1,4 @@
-package com.medeiros.reservation.exceptions;
+package com.medeiros.reservation.exceptions.room;
 
 public class RoomAlreadyExistsExeption extends RuntimeException {
   private static final String DEFAULT_MESSAGE = "Room already exists.";
